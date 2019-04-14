@@ -159,4 +159,6 @@ uncompress:
 		
 		j _uncompress_loop
 _uncompress_ret:
+	li $t0, 0
+	sb $t0, ($a0)
 	jr $ra
